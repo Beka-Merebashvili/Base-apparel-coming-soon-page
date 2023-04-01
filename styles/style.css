@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* styles for mobile */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    margin: 40px 190px 40px 0;
+}
+.model-photo {
+    width: 376px;
+    height: 250px;
+    margin-bottom: 64px;
+}
+.model-img img {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    text-align: center;
+}
+span {
+     color: #CE9898;
+}
+.fashion-store {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #CE9898;
+    width: 310px;
+    text-align: center;
+    margin: 16px 0 32px 0;
+}
+#email {
+    width: 310px;
+    height: 48px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border: 1px solid #CE9898;
+    border-radius: 28px;
+}
+form {
+    position: relative;
+    width: 311px;
+}
+input {
+    padding-left: 24px;
+}
+ input:focus{
+    outline: none;
+ }
+ ::placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    color: #CE9898;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+ }
+button {
+    width: 64px;
+    height: 48px;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    border-radius: 28px;
+    border: none;
+    position: absolute;
+    right: 0 ;
+    top: 0;
+    cursor: pointer;
+}
+#erroricon {
+    position: absolute;
+    left: 215px;
+    top: 13px;
+    display: none;
+}
+#errortext {
+    font-size: 13px;
+    color: #F96464;
+    margin: 10px 0 0 20px;
+}
+
+/* styles for desktop */
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);  
+    }
+    .logo {
+        margin-right: 800px;
+        position: fixed;
+        top: 20px;
+        left: 286px;
+        z-index: 1;
+    }
+    .main-container {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .model-photo{
+        width: 610px;
+        height: 810px;
+        background-image: url(../images/hero-desktop.jpg);
+        background-repeat: no-repeat;
+    }
+    .model-photo img {
+        display: none;
+    }
+    .coming-soon {
+        width: 830px;
+        height: 500px;
+    }
+    h1 {
+        font-size: 64px;
+        line-height: 72px;
+    }
+    .fashion-store {
+        font-size: 16px;
+        line-height: 28px;
+        width: 444px;
+    }
+    form{
+        width: 345px;
+        height: 56px;
+    }
+    button {
+        width: 80px;
+        height: 48px;
+        right: 0;
+    }
+}
